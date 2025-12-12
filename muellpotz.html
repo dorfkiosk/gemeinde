@@ -3,14 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Müllabfuhr – Abholtermine Potzneusiedl</title>
-  <meta http-equiv="refresh" content="21600">
+  <title>Müllabfuhr – Potzneusiedl</title>
+
+  <!-- Fallback, falls JS blockiert ist -->
+  <meta http-equiv="refresh" content="1;url=https://potzneusiedl.at/buergerservice/muellentsorgung#abholtermine" />
+
   <style>
-    html, body { margin:0; padding:0; height:100%; width:100%; overflow:hidden; background:#fff; font-family:Arial,sans-serif; }
-    iframe { border:0; width:100vw; height:100vh; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .msg {
+      font-size: 28px;
+      color: #222;
+      text-align: center;
+      padding: 24px;
+    }
   </style>
+
+  <script>
+    // Sofort weiterleiten (kein iframe!)
+    window.location.replace("https://potzneusiedl.at/buergerservice/muellentsorgung#abholtermine");
+  </script>
 </head>
 <body>
-  <iframe src="https://potzneusiedl.at/buergerservice/muellentsorgung#abholtermine"></iframe>
+  <div class="msg">
+    Müllabfuhr – Potzneusiedl<br><br>
+    Lade Abholtermine…
+  </div>
 </body>
 </html>
