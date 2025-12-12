@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Müllabfuhr – Potzneusiedl</title>
 
-  <!-- Fallback, falls JS blockiert ist -->
-  <meta http-equiv="refresh" content="1;url=https://potzneusiedl.at/buergerservice/muellentsorgung#abholtermine" />
+  <!-- Fallback-Weiterleitung (falls JavaScript blockiert ist) -->
+  <meta http-equiv="refresh"
+        content="1;url=https://citiesapps.com/cities/potzneusiedl/waste-management/areas#modal" />
 
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       height: 100%;
+      width: 100%;
+      background: #ffffff;
       font-family: Arial, sans-serif;
-      background: white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -27,14 +30,17 @@
   </style>
 
   <script>
-    // Sofort weiterleiten (kein iframe!)
-    window.location.replace("https://potzneusiedl.at/buergerservice/muellentsorgung#abholtermine");
+    // Sofortige Weiterleitung – KEIN iframe
+    window.location.replace(
+      "https://citiesapps.com/cities/potzneusiedl/waste-management/areas#modal"
+    );
   </script>
 </head>
+
 <body>
   <div class="msg">
-    Müllabfuhr – Potzneusiedl<br><br>
-    Lade Abholtermine…
+    🗑️ Müllabfuhr – Potzneusiedl<br><br>
+    Abholtermine werden geladen …
   </div>
 </body>
 </html>
